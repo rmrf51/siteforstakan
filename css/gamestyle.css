@@ -1,0 +1,33 @@
+header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: row;
+/*	flex-flow: column nowrap;*/
+}
+
+#canvas{
+	background-color: #eee;
+	border:1px solid #ccc;
+}
+
+canvas{
+
+}
+
+.score{
+	color: white;
+	background: black;
+	text-align: center;
+	font-size: 30px;
+	font-family: Comics;
+}
+
+.canvascenter{
+	display: flex;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+	overflow: auto;
+}
+

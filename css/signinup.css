@@ -1,0 +1,17 @@
+form {
+	align-content: center;
+	border: 2px white;
+	background-color: #bbb;
+	border-radius: 5px;
+	margin-right: 20vw;
+	margin-left: 20vw;
+	margin-top: 20vh;
+	padding: 3px;
+}
+
+button {
+	margin-top: 12px;
+	padding: 5px;
+	background: green;
+	color: white;
+}

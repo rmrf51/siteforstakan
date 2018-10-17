@@ -1,0 +1,373 @@
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #880045;
+	border-radius: 10px;
+}
+caption{
+	color: black;
+	font-size: 25px;
+	font-weight: bold;
+}
+/*
+ul{
+	list-style-type: circle;
+	list-style-position: outside;
+	
+}
+*/
+body{
+/*	background-color: #fbf8ef;*/
+	background-color: #ff33cc;
+}
+
+.div{
+	margin:40px;
+}
+
+p{
+	color:black;
+}
+
+hr{
+	margin: 30;
+}
+
+li{
+	float: left;
+}
+
+.log{
+	float: right;
+}
+
+li a{
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 16px 14px;
+	text-decoration: none;
+}
+
+li a:hover {
+	background-color: #9d2763;
+}
+
+.bottom{
+	background-color: black;
+	margin-top: 400px;
+	float: bottom;
+}
+
+.table1{
+	border: 2px solid black;
+	border-radius: 10px;
+	border-spacing: 10px;
+	border-color: white;
+	margin: auto;
+	font-size: 20px;
+	background-color: black; 
+
+}
+
+
+tr {
+	border: 2px solid white;
+	padding: 7vh;
+}
+
+th{
+	border:2px solid green;
+	padding: 7vh;
+}
+
+th, tr {
+	border: 4px dashed white;
+	border-radius: 10px;
+
+}
+
+td{
+	border: 4px solid white;
+	padding: 7vh;
+	border-radius: 10px;
+}
+
+a:hover{
+	background: red;
+}
+
+a:active{
+	color: red;
+}
+
+tr:hover{
+	background-color: red;
+}
+
+.controls {
+}
+
+
+.space{
+	margin: 40vh;
+}
+
+.wrapper {
+	height: 350px;
+	margin: 100px auto 0;
+	position: relative;
+	width: 700px;
+}
+
+.slider {
+	height: inherit;
+	overflow: hidden;
+	position: relative;
+	width: inherit;
+	-webkit-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+	-moz-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+	-o-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+	box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+}
+
+#slide1{
+
+}
+
+.slides {
+	height: inherit;
+	opacity: 0;
+	position: absolute;
+	width: inherit;
+	z-index: 0;
+	-webkit-transform: scale(1.5);
+	-moz-transform: scale(1.5);
+	-o-transform: scale(1.5);
+	transform: scale(1.5);
+	-webkit-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+	-moz-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+	-o-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+	transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+}
+
+.slide1{
+	background-image: url(../img/3.jpg);
+	background-size: 50%;
+	background-repeat: inherit;
+}
+
+label:hover{
+	color: white;
+}
+
+
+.slide2{
+	background-image: url(../img/1.jpg);
+	background-size: 50%;
+	background-repeat: inherit;
+}
+.slide3{
+	background-image: url(../img/2.jpg);
+	background-size: 50%;
+	background-repeat: inherit;
+}
+
+#slide1:checked ~ .slider > .slide1,
+#slide2:checked ~ .slider > .slide2,
+#slide3:checked ~ .slider > .slide3 {
+	opacity: 1;
+	z-index: 1;
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-o-transform: scale(1);
+	transform: scale(1);
+}
+
+
+
+.wrapper > input {
+	display: none;
+}
+
+.wrapper .controls {
+	left: 50%;
+	margin-left: -5vw;
+	position: absolute;
+}
+
+.wrapper label {
+	cursor: pointer;
+	display: inline-block;
+/*	height: 8px;*/
+	margin: 25px 12px 0 16px;
+	position: relative;
+	/*width: 8px;*/
+	/*-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;*/
+	-webkit-transition: background ease-in-out .5s;
+	-moz-transition: background ease-in-out .5s;
+	-o-transition: background ease-in-out .5s;
+	transition: background ease-in-out .5s;
+}
+
+.wrapper label:hover, 
+#slide1:checked ~ .controls label:nth-of-type(1),
+#slide2:checked ~ .controls label:nth-of-type(2),
+#slide3:checked ~ .controls label:nth-of-type(3) {
+	/*background: #ddd;
+*/}
+
+.wrapper label:after {
+	/*border: 2px solid #ddd;*/
+	content: " ";
+	display: block;
+	height: 12px;
+	left: -4px;
+	position: absolute;
+	top: -4px;
+	width: 12px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+}
+
+
+
+progress{
+	width: 20vw;
+	height: 5vh;
+	background-color: repeating-linear-gradient(45deg, #606dbc 10px, #606dbc , #465298 20px);
+	font: 12px Arial, Tahoma, sans-serif;
+	position: relative;
+	overflow: hidden;
+}
+
+.bottom {
+	color: white;
+}
+
+
+.table-container {
+	width: 100%;
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+}
+
+
+.header-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+@media screen and (min-width: 1px) and (max-width: 800px) {
+	
+	table {
+	width: 100%;
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+	margin: 2px;
+	padding: 2px;
+	}
+
+	tr {
+	border: 2px solid white;
+	padding: 1vh;
+}
+
+	th{
+		border:2px solid green;
+		padding: 1vh;
+	}
+
+	th, tr {
+	border: 4px dashed white;
+	border-radius: 10px;
+
+}
+
+td{
+	border: 4px solid white;
+	padding: 1vh;
+	border-radius: 10px;
+}
+
+
+.slide1{
+	background-image: url(../img/3.jpg);
+	background-size: 50%;
+	max-width: 80vw;
+	max-height: 70vh;
+	min-width: 40vw;
+	min-height: 35vh;
+}
+.slide2{
+	background-image: url(../img/1.jpg);
+	background-size: 50%;
+	max-width: 80vw;
+	max-height: 70vh;
+	min-width: 40vw;
+	min-height: 35vh;
+}
+.slide3{
+	background-image: url(../img/2.jpg);
+	background-size: 50%;
+	max-width: 80vw;
+	max-height: 70vh;
+	min-width: 40vw;
+	min-height: 35vh;
+}
+
+.slider{
+	max-width: 80vw;
+	max-height: 70vh;
+	min-width: 40vw;
+	min-height: 35vh;
+}
+
+}
+
+
+
+.progress-bar {
+    background-color: #1a1a1a;
+    height: 25px;
+    padding: 5px;
+    width: 350px;
+    margin: 50px 0;         
+    border-radius: 5px;
+    box-shadow: 0 1px 5px #000 inset, 0 1px 0 #444;          
+}
+
+
+#prbar {
+    margin:5px;
+    width:40vw;
+    background-color:#dddddd;
+    overflow:hidden;
+    border: 1px solid #bbbbbb;
+    border-radius: 15px;
+    box-shadow: 0px 2px 4px #555555;
+}
+
+
+#prpos {
+    width:0%;
+    height:30px;
+    background-color:#3399ff;
+    border-right:1px solid #bbbbbb;
+    transition: width 5s ease;
+    background-image: linear-gradient(135deg,#3399ff 25%,#99ccff 25%,#99ccff 50%, #3399ff 50%, #3399ff 75%,#99ccff 75%,#99ccff 100%);
+    background-size: 40px 40px;
+    animation: bganim 5s ease-out infinite;
+}
+
+@keyframes bganim {
+    from {width: 0;} to {width: 100%;}
+}
